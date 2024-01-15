@@ -74,6 +74,9 @@
               "buildTarget": "weather-channel:build:development"
             }
           },
+          "options": {
+            "buildTarget": "weather-channel:build:production"
+          },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
