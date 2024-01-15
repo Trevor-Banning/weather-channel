@@ -1,1 +1,27 @@
-<p>local-weather-page works!</p>
+<mat-toolbar color="indigo">
+  <span>
+    Hello Trevor
+  </span>
+</mat-toolbar>
+
+<div>
+  <span class="ga-display-inline-block">
+      <mat-card>
+          <mat-card-content>
+              <mat-list>
+                  <mat-list-item> <strong>City: </strong>{{weather.cityName}}</mat-list-item>
+                  <mat-divider></mat-divider>
+                  <mat-list-item> <strong> Temperature</strong> : {{weather.currentTemperature}}F </mat-list-item>
+                  <mat-divider></mat-divider>
+                  <mat-list-item> <strong>Felt Temperature</strong> : {{weather.feelsLike}}F </mat-list-item>
+                  <mat-divider></mat-divider>
+                  <mat-list-item> <strong>Local Time</strong> : {{weather.localTime}} </mat-list-item>
+                  <mat-divider></mat-divider>
+                  <mat-list-item> <strong>Description</strong> : {{weather.description}}<span>
+                      </span>
+                    </mat-list-item>
+                 </mat-list>
+          </mat-card-content>
+        </mat-card>
+  </span>
+</div>
