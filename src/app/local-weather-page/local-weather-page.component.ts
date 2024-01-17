@@ -5,11 +5,14 @@ import { MatCardModule } from '@angular/material/card';
 import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { localWeatherModel } from '../models/local-weather-model';
-import { MatToolbarModule} from '@angular/material/toolbar'
+import { MatToolbarModule} from '@angular/material/toolbar';
+import { MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button'
+import { ToolbarComponent } from '../shared/toolbar/toolbar';
 @Component({
   selector: 'app-local-weather-page',
   standalone: true,
-  imports: [MatFormFieldModule, MatCardModule, MatSidenavModule, MatListModule, MatToolbarModule],
+  imports: [MatFormFieldModule, MatCardModule, MatSidenavModule, MatListModule, MatToolbarModule, MatIconModule, MatButtonModule, ToolbarComponent],
   templateUrl: './local-weather-page.component.html',
   styleUrl: './local-weather-page.component.scss'
 })
@@ -34,4 +37,5 @@ export class LocalWeatherPageComponent {
       console.log(error);
     });
   }
+
 }

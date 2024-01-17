@@ -1,16 +1,9 @@
-<mat-toolbar color="indigo">
-  <span>
-    Hello Trevor
-  </span>
-</mat-toolbar>
-
 <div>
-  <span class="ga-display-inline-block">
-      <mat-card>
+  <span class="">
+      <mat-card class="local-weather-container">
           <mat-card-content>
-              <mat-list>
-                  <mat-list-item> <strong>City: </strong>{{weather.cityName}}</mat-list-item>
-                  <mat-divider></mat-divider>
+              <h3>{{weather.cityName}}</h3>
+              <mat-list class="list-local-weather">
                   <mat-list-item> <strong> Temperature</strong> : {{weather.currentTemperature}}F </mat-list-item>
                   <mat-divider></mat-divider>
                   <mat-list-item> <strong>Felt Temperature</strong> : {{weather.feelsLike}}F </mat-list-item>
