@@ -20,10 +20,8 @@ constructor(private route: ActivatedRoute){
 
 }
 ngOnInit(){
-  console.log('route', this.route)
   this.route.title.subscribe(title => {
     this.pageTitle = title
   })
-  console.log(this.pageTitle)
 }
 }
