@@ -10,5 +10,5 @@ import { ToolbarComponent } from './shared/toolbar/toolbar';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  title = 'weather-channel';
+  title = 'toolbox';
 }

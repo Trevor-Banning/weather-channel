@@ -27,14 +27,12 @@ export class LocalWeatherPageComponent {
 
   axios.get('http://api.weatherstack.com/current', {params})
     .then(response => {
-      console.log(response.data)
       this.weather.cityName = response.data.location.name;
       this.weather.currentTemperature = response.data.current.temperature;
       this.weather.feelsLike = response.data.current.feelslike;
       this.weather.localTime = response.data.location.localtime;
       this.weather.description = response.data.current.weather_descriptions;
     }).catch(error => {
-      console.log(error);
     });
   }
 
